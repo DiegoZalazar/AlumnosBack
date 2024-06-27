@@ -1,7 +1,7 @@
 package com.ipn.mx.backalumnos.models.repository;
 
 import com.ipn.mx.backalumnos.models.entitites.Alumno;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface AlumnoRepository extends CrudRepository<Integer, Alumno> {
+public interface AlumnoRepository extends JpaRepository<Alumno, Integer> {
 }
