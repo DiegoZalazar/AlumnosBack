@@ -1,4 +1,4 @@
-package com.ipn.mx.backalumnos.models.controllers;
+package com.ipn.mx.backalumnos.controllers;
 
 import com.ipn.mx.backalumnos.models.entitites.Alumno;
 import com.ipn.mx.backalumnos.services.AlumnoService;
@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/alumno")
 public class AlumnoController {
     @Autowired

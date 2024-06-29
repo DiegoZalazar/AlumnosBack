@@ -1,4 +1,4 @@
-package com.ipn.mx.backalumnos.models.controllers;
+package com.ipn.mx.backalumnos.controllers;
 
 import com.ipn.mx.backalumnos.models.entitites.Archivo;
 import com.ipn.mx.backalumnos.services.ArchivoService;
@@ -15,6 +15,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/archivo")
+@CrossOrigin(origins = "*")
 public class ArchivoController {
 
     @Autowired
